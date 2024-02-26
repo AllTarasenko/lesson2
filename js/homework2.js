@@ -18,6 +18,7 @@
 
 */
 
+
 var age = prompt("Вкажіть вік, значення повинно буті від 1 до 99");
 console.log(typeof age, Number(age));
 //let age = 0;
