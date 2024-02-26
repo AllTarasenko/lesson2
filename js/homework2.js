@@ -18,5 +18,17 @@
 
 */
 
-
+var age = prompt("Вкажіть вік, значення повинно буті від 1 до 99");
+console.log(typeof age, Number(age));
+//let age = 0;
+if (1 <= age && age <= 99) {
+    if (age === 1) {
+        console.log('Pік')
+    }
+    else if (2 <= age && age <= 4) {
+        console.log('Роки');
+    }
+    else if (5 <= age && age <= 99)
+        console.log('Років');
+} else console.log('Введене значення повинно бути числом від 1 до 99');
 
