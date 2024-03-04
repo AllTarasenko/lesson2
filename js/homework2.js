@@ -19,19 +19,19 @@
 */
 
 
-var age = prompt("Вкажіть вік, значення повинно буті від 1 до 99");
-console.log(typeof age, Number(age));
-//let age = 42;
+//var age = prompt("Вкажіть вік, значення повинно буті від 1 до 99");
+//console.log(typeof age, Number(age));
+let age = 19;
 if (1 <= age && age <= 99) {
     if ((age === 1 || (age % 10 === 1)) && age !== 11 ) {
-        console.log(' рік')
+        console.log(`${age} рік`)
     }
     else if (2 <= age && age <= 4 || (age % 10 === 2) || (age % 10 === 4) || (age % 10 === 3)) {
 
-        console.log(' роки');
+        console.log(`${age} роки`);
     }
     else if ((age >= 5 && age <= 20) || (age % 5 === 0) || ((age % 5 === 0) <= (age % 10 === 0)) && ((age % 5 === 0) >= (age % 10 === 0)))
-        console.log(' років');
+        console.log(`${age} років`);
 } else console.log('Введене значення повинно бути числом від 1 до 99');
 
 
